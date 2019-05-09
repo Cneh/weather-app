@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+     <section class="shero">
+        <div class="shero-inner">
+            <h1>My  Weather Application Created by CNEH</h1>
+            <h2>IT'S VACAY TIME</h2>
+            <a href=# class="btn">Go ahead...</a>
+        </div>
+      </section>
+      <div class="element">
+      <fieldset class="main-content">
+        <form action="/" method="post">
+          <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
+          <input type="submit" class="ghost-button" value="Get Weather">
+        </form>
+        <% if(weather !== null){ %>
+         <p><%= weather %></p>
+        <% } %>
+
+        <% if(error !== null){ %>
+         <p><%= error %></p>
+        <% } %>
+      </fieldset>
+      <h3><em>Yayyyyyy It Work</em></h3>
+    </div>
+  </body>
+</html>
+    
+      
+   
